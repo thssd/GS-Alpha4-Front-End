@@ -61,3 +61,30 @@ Radar que “enxerga” através das nuvens, permitindo:
 Monitoramento contínuo mesmo com cobertura de nuvens
 Detecção de mudanças estruturais no solo e na vegetação
 Complemento às imagens ópticas, reduzindo a dependência do clima
+
+Sistema de Identificação
+Comparação Temporal de Imagens
+A IA compara imagens da mesma região em datas diferentes, detectando mudanças relevantes não autorizadas pelos responsáveis.
+
+NDVI (Índice de Vegetação por Diferença Normalizada)
+
+Os satélites capturam luz no infravermelho próximo, que é fortemente refletida por vegetação saudável.
+Scripts em Python ou algoritmos de IA calculam o NDVI da área monitorada.
+Quedas bruscas de NDVI de uma semana para outra indicam:
+Remoção de vegetação
+Desmatamento
+Abertura de clareiras para habitações ou mineração
+Análise de Solo Exposto e Relevo
+
+Mineração ilegal e garimpo geram forte escavação do solo e alteração de rios.
+O algoritmo identifica:
+Assinaturas de “Solo Exposto” (lama, áreas sem vegetação)
+Alterações em cursos d’água
+Padrões típicos de garimpo
+Geofencing – Cruzamento com Polígonos Oficiais
+
+O sistema salva coordenadas (latitude e longitude) de:
+Áreas de Preservação Permanente (APPs)
+Terras públicas
+Áreas protegidas
+Apenas mudanças dentro desses perímetros geram alertas prioritários.
