@@ -98,3 +98,27 @@ Tipo de alteração detectada
 Profissionais da central revisam e confirmam a divergência.
 Um alerta é enviado diretamente ao órgão responsável (municipal, estadual ou federal).
 Objetivo: corrigir a irregularidade o mais rápido possível, com dados confiáveis e georreferenciados.
+
+Tecnologias Utilizadas
+Front-End
+HTML5
+CSS3
+JavaScript (Vanilla, sem frameworks externos)
+Arquitetura e Organização
+Estrutura de pastas:
+/css – arquivos de estilo (por exemplo, style.css)
+/js – scripts JavaScript (por exemplo, script.js)
+/assets – imagens, ícones, logos e diagramas
+Arquivos .html na raiz do projeto
+Dados e Processamento (Conceito da Solução)
+Satélites Sentinel-1 e Sentinel-2 (dados de observação da Terra)
+Algoritmos de IA e análise de imagens:
+Detecção de mudança (change detection)
+Cálculo de NDVI
+Identificação de solo exposto e alterações em rios
+Geofencing com polígonos oficiais:
+APPs
+Terras públicas
+Áreas protegidas
+Back-End (conceito / integração futura)
+[A definir pelo grupo, ex.: Python (Flask/Django), Node.js ou Java com Spring Boot para futuramente receber os dados, processar alertas e expor APIs para o front-end.]
