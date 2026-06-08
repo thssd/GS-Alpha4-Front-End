@@ -143,3 +143,45 @@ Global-Solution/
     ├── foto2.jpg
     ├── foto3.jpeg
     └── foto4.jpeg
+
+    Páginas do Projeto
+index.html – Página inicial
+
+Introdução ao problema e à solução
+Seção hero e resumo da proposta
+sobre.html – Sobre o projeto
+
+Contexto, problema, motivação
+Tecnologias utilizadas
+Conexão com ODS da ONU
+integrantes.html – Equipe
+
+Lista de integrantes com:
+Nome completo
+RM
+Turma
+Foto
+Links de GitHub e LinkedIn
+faq.html – Perguntas frequentes
+
+Dúvidas comuns sobre a solução
+contato.html – Contato
+
+Formulário com:
+Nome
+E-mail
+Assunto
+Mensagem
+Validação de campos via JavaScript
+solucao1.html – Visão geral da solução
+
+Explicação do problema
+Objetivos e métricas de impacto
+Satélites utilizados
+Fluxo de funcionamento (satélite → IA → validação → alerta)
+solucao2.html – Módulos e detalhes técnicos
+
+Módulo urbano (favelas/APP)
+Módulo de desmatamento (Amazônia/Cerrado)
+Módulo de mineração ilegal
+Módulo de geofencing e alertas
