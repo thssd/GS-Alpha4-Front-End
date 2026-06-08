@@ -1,14 +1,18 @@
-/* Variáveis CSS para cores */
+/* ============================================
+   Variáveis CSS (Design Tokens)
+   ============================================ */
 :root {
-    --primary-color: #0056b3; /* Azul FIAP */
-    --secondary-color: #007bff; /* Azul mais claro */
+    --primary-color: #0056b3;
+    --secondary-color: #007bff;
     --text-color: #333;
     --light-bg: #f8f9fa;
     --dark-bg: #343a40;
     --white: #fff;
 }
 
-/* Reset básico */
+/* ============================================
+   Reset básico
+   ============================================ */
 * {
     margin: 0;
     padding: 0;
@@ -28,12 +32,14 @@ body {
     padding: 0 20px;
 }
 
-/* Header */
+/* ============================================
+   Header e Navegação
+   ============================================ */
 header {
     background-color: var(--primary-color);
     color: var(--white);
     padding: 1rem 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header .container {
@@ -43,7 +49,7 @@ header .container {
 }
 
 .logo img {
-    height: 50px; /* Ajuste o tamanho do seu logo */
+    height: 50px;
 }
 
 nav .nav-list {
@@ -62,12 +68,14 @@ nav .nav-list a {
     transition: color 0.3s ease;
 }
 
-nav .nav-list a:hover {
+nav .nav-list a:hover,
+nav .nav-list a.active {
     color: var(--light-bg);
+    text-decoration: underline;
 }
 
 .menu-toggle {
-    display: none; /* Esconde o botão de menu em telas maiores */
+    display: none;
     background: none;
     border: none;
     color: var(--white);
@@ -75,9 +83,13 @@ nav .nav-list a:hover {
     cursor: pointer;
 }
 
-/* Hero Section */
+/* ============================================
+   Hero Section
+   ============================================ */
 .hero-section {
-    background: linear-gradient(rgba(0, 86, 179, 0.7), rgba(0, 86, 179, 0.7)), url('../assets/hero-bg.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 86, 179, 0.85), rgba(0, 86, 179, 0.85)),
+                url('../assets/hero-bg.jpg') no-repeat center center / cover;
+    background-color: var(--primary-color); /* fallback se a imagem não existir */
     color: var(--white);
     text-align: center;
     padding: 100px 0;
@@ -93,6 +105,9 @@ nav .nav-list a:hover {
     margin-bottom: 30px;
 }
 
+/* ============================================
+   Botão
+   ============================================ */
 .btn {
     display: inline-block;
     background-color: var(--secondary-color);
@@ -108,7 +123,9 @@ nav .nav-list a:hover {
     background-color: #0056b3;
 }
 
-/* Content Sections */
+/* ============================================
+   Seções de Conteúdo
+   ============================================ */
 .content-section {
     padding: 60px 0;
     text-align: center;
@@ -120,17 +137,55 @@ nav .nav-list a:hover {
     color: var(--primary-color);
 }
 
+.content-section h3 {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin: 30px 0 15px;
+}
+
 .content-section p {
     font-size: 1.1rem;
     max-width: 800px;
     margin: 0 auto 20px auto;
 }
 
+.content-section ul,
+.content-section ol {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.content-section li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
 .light-bg {
     background-color: var(--light-bg);
 }
 
-/* Footer */
+/* ============================================
+   Imagem da Solução com Legenda
+   ============================================ */
+.solution-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+    border-radius: 6px;
+}
+
+.figure-caption {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    margin-top: 8px;
+}
+
+/* ============================================
+   Footer
+   ============================================ */
 footer {
     background-color: var(--dark-bg);
     color: var(--white);
@@ -139,14 +194,17 @@ footer {
     margin-top: 40px;
 }
 
-/* Formulário de Contato (exemplo para contato.html) */
+/* ============================================
+   Formulário de Contato
+   ============================================ */
 .contact-form {
     max-width: 600px;
     margin: 40px auto;
     padding: 30px;
     background-color: var(--white);
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
 .contact-form label {
@@ -164,6 +222,7 @@ footer {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1rem;
+    font-family: inherit;
 }
 
 .contact-form textarea {
@@ -180,77 +239,16 @@ footer {
     cursor: pointer;
     font-size: 1.1rem;
     transition: background-color 0.3s ease;
+    width: 100%;
 }
 
 .contact-form button:hover {
     background-color: var(--secondary-color);
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    header .container {
-        flex-wrap: wrap;
-    }
-
-    nav .nav-list {
-        display: none; /* Esconde a lista de navegação por padrão em mobile */
-        flex-direction: column;
-        width: 100%;
-        background-color: var(--primary-color);
-        position: absolute;
-        top: 70px; /* Abaixo do header */
-        left: 0;
-        padding: 10px 0;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    nav .nav-list.active {
-        display: flex; /* Mostra a lista quando o menu está ativo */
-    }
-
-    nav .nav-list li {
-        margin: 0;
-        text-align: center;
-        padding: 10px 0;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
-
-    nav .nav-list li:last-child {
-        border-bottom: none;
-    }
-
-    .menu-toggle {
-        display: block; /* Mostra o botão de menu em telas menores */
-    }
-
-    .hero-section h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-section p {
-        font-size: 1rem;
-    }
-
-    .content-section h2 {
-        font-size: 2rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-section h1 {
-        font-size: 2rem;
-    }
-
-    .content-section h2 {
-        font-size: 1.8rem;
-    }
-
-    .logo img {
-        height: 40px;
-    }
-}
-
-/* Estilos para a página de Integrantes */
+/* ============================================
+   Integrantes
+   ============================================ */
 .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -261,7 +259,7 @@ footer {
 .team-member {
     background-color: var(--white);
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     padding: 25px;
     text-align: center;
     transition: transform 0.3s ease;
@@ -312,18 +310,13 @@ footer {
     background-color: var(--primary-color);
 }
 
-@media (max-width: 768px) {
-    .team-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-}
-
-
-/* Estilos para a página de FAQ */
+/* ============================================
+   FAQ
+   ============================================ */
 .faq-item {
     background-color: var(--white);
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     padding: 20px;
     margin-bottom: 20px;
     text-align: left;
@@ -339,7 +332,7 @@ footer {
     font-size: 1rem;
     color: #444;
     line-height: 1.7;
-    margin: 0; /* Remove margin-bottom padrão */
+    margin: 0;
 }
 
 .faq-item a {
@@ -350,4 +343,78 @@ footer {
 
 .faq-item a:hover {
     text-decoration: underline;
+}
+
+/* ============================================
+   Responsividade – Tablet (≤ 768px)
+   ============================================ */
+@media (max-width: 768px) {
+    header .container {
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 70px;
+        left: 0;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+    }
+
+    nav .nav-list.active {
+        display: flex;
+    }
+
+    nav .nav-list li {
+        margin: 0;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    nav .nav-list li:last-child {
+        border-bottom: none;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .content-section h2 {
+        font-size: 2rem;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+/* ============================================
+   Responsividade – Mobile (≤ 480px)
+   ============================================ */
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .logo img {
+        height: 40px;
+    }
 }
