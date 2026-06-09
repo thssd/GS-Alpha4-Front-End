@@ -3,98 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visão geral da solução de monitoramento inteligente de áreas críticas.">
     <title>Global Solution FIAP - Visão Geral da Solução</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-    <div class="container">
-        <a href="index.html" class="logo">
-            <img src="assets/logo.png" alt="Logo da Solução">
-        </a>
-        <nav>
-            <button class="menu-toggle" aria-label="Abrir menu">☰</button>
-            <ul class="nav-list">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre o Projeto</a></li>
-                <li><a href="solucao1.html" class="active">Nossa Solução 1</a></li>
-                <li><a href="solucao2.html">Nossa Solução 2</a></li>
-                <li><a href="integrantes.html">Integrantes</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-<main>
-    <section id="solution1" class="content-section">
+    <header>
         <div class="container">
-            <h2>Solução de Monitoramento Inteligente de Áreas Críticas</h2>
-            <p>
-                Nossa solução integra imagens de satélite, inteligência artificial e indicadores de vegetação 
-                para detectar rapidamente ocupações irregulares, desmatamento e mineração ilegal em todo o Brasil.
-            </p>
-            <h3>Problemas que Enfrentamos</h3>
-            <p>
-                Segundo o Censo do IBGE, o Brasil possui mais de 16.400 favelas e comunidades urbanas, 
-                onde vivem cerca de 16,4 milhões de pessoas (aproximadamente 8,1% da população do país). 
-                Muitas dessas ocupações crescem em questão de semanas, frequentemente em Áreas de Preservação 
-                Permanente (APPs) urbanas, como margens de rios e encostas de morros, aumentando o risco de 
-                deslizamentos e enchentes.
-            </p>
-            <p>
-                Além disso, a Amazônia e o Cerrado são constantemente ameaçados por desmatamento ilegal. 
-                De acordo com o MapBiomas, cerca de 90% do desmatamento no Brasil é ilegal, e aproximadamente 
-                metade da devastação na Amazônia ocorre em terras públicas não autorizadas ou áreas protegidas.
-            </p>
-            <p>
-                Na mineração ilegal, o impacto é ainda mais grave: desmatamento, degradação do solo, 
-                contaminação da água por mercúrio e estruturas ilegais montadas em locais remotos e de difícil acesso.
-            </p>
-
-            <h3>Objetivo da Solução</h3>
-            <p>
-                O nosso objetivo é reduzir drasticamente o tempo de resposta dos órgãos fiscalizadores, 
-                permitindo que atuem entre 24 e 48 horas após o início de uma invasão ou atividade ilegal. 
-                Com isso, estimamos:
-            </p>
-            <ul>
-                <li>Redução de 80% a 90% das invasões em APPs urbanas.</li>
-                <li>Melhoria de 50% a 70% nos parâmetros de impedimento de desmatamento ilegal.</li>
-                <li>Redução de 60% a 80% dos casos de mineração ilegal detectados tardiamente.</li>
-            </ul>
-            <h3>Satelites Utilizados</h3>
-            <ul>
-                <li>
-                    <strong>Sentinel-2:</strong> 
-                    Imagens ópticas de alta resolução para identificar início de invasões em territórios, 
-                    abertura de clareiras, queimadas e mudanças na vegetação.
-                </li>
-                <li>
-                    <strong>Sentinel-1:</strong> 
-                    Radar que “enxerga” através das nuvens, permitindo monitoramento contínuo mesmo em 
-                    condições climáticas adversas, complementando as imagens ópticas.
-                </li>
-            </ul>
-            <h3>Fluxo de Funcionamento</h3>
-            <ol>
-                <li><strong>Coleta de Imagens:</strong> Satélites Sentinel-1 e Sentinel-2 capturam imagens periódicas das áreas monitoradas.</li>
-                <li><strong>Análise Automática:</strong> Algoritmos de IA comparam imagens de uma mesma região em diferentes datas.</li>
-                <li><strong>Cálculo de NDVI:</strong> 
-                    O sistema calcula o Índice de Vegetação por Diferença Normalizada (NDVI). 
-                    Quedas bruscas do índice indicam remoção de vegetação ou abertura de clareiras.
-                </li>
-            </ol>
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Logo da Solução">
+            </a>
+            <nav aria-label="Menu principal">
+                <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre o Projeto</a></li>
+                    <li><a href="solucao1.html" class="active">Nossa Solução 1</a></li>
+                    <li><a href="solucao2.html">Nossa Solução 2</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
-</main>
-<footer>
-    <div class="container">
-        <p>&copy; 2026 Global Solution FIAP. Todos os direitos reservados.</p>
-    </div>
-</footer>
-<script src="js/script.js"></script>
+    </header>
+
+    <main>
+        <section id="solution1" class="content-section">
+            <div class="container">
+                <h2>Solução de Monitoramento Inteligente de Áreas Críticas</h2>
+                <p>
+                    Nossa solução integra imagens de satélite, inteligência artificial e indicadores de vegetação
+                    para detectar rapidamente ocupações irregulares, desmatamento e mineração ilegal em todo o Brasil.
+                </p>
+
+                <h3>Problemas que Enfrentamos</h3>
+                <p>
+                    Segundo o Censo do IBGE, o Brasil possui mais de 16.400 favelas e comunidades urbanas,
+                    onde vivem cerca de 16,4 milhões de pessoas (aproximadamente 8,1% da população do país).
+                    Muitas dessas ocupações crescem em questão de semanas, frequentemente em Áreas de Preservação
+                    Permanente (APPs) urbanas, como margens de rios e encostas de morros, aumentando o risco de
+                    deslizamentos e enchentes.
+                </p>
+                <p>
+                    Além disso, a Amazônia e o Cerrado são constantemente ameaçados por desmatamento ilegal.
+                    De acordo com o MapBiomas, cerca de 90% do desmatamento no Brasil é ilegal, e aproximadamente
+                    metade da devastação na Amazônia ocorre em terras públicas não autorizadas ou áreas protegidas.
+                </p>
+                <p>
+                    Na mineração ilegal, o impacto é ainda mais grave: desmatamento, degradação do solo,
+                    contaminação da água por mercúrio e estruturas ilegais montadas em locais remotos e de difícil acesso.
+                </p>
+
+                <h3>Objetivo da Solução</h3>
+                <p>
+                    O nosso objetivo é reduzir drasticamente o tempo de resposta dos órgãos fiscalizadores,
+                    permitindo que atuem entre 24 e 48 horas após o início de uma invasão ou atividade ilegal.
+                    Com isso, estimamos:
+                </p>
+                <ul>
+                    <li>Redução de 80% a 90% das invasões em APPs urbanas.</li>
+                    <li>Melhoria de 50% a 70% nos parâmetros de impedimento de desmatamento ilegal.</li>
+                    <li>Redução de 60% a 80% dos casos de mineração ilegal detectados tardiamente.</li>
+                </ul>
+
+                <h3>Satélites Utilizados</h3>
+                <ul>
+                    <li>
+                        <strong>Sentinel-2:</strong>
+                        Imagens ópticas de alta resolução para identificar início de invasões em territórios,
+                        abertura de clareiras, queimadas e mudanças na vegetação.
+                    </li>
+                    <li>
+                        <strong>Sentinel-1:</strong>
+                        Radar que "enxerga" através das nuvens, permitindo monitoramento contínuo mesmo em
+                        condições climáticas adversas, complementando as imagens ópticas.
+                    </li>
+                </ul>
+
+                <h3>Fluxo de Funcionamento</h3>
+                <ol>
+                    <li><strong>Coleta de Imagens:</strong> Satélites Sentinel-1 e Sentinel-2 capturam imagens periódicas das áreas monitoradas.</li>
+                    <li><strong>Análise Automática:</strong> Algoritmos de IA comparam imagens de uma mesma região em diferentes datas.</li>
+                    <li>
+                        <strong>Cálculo de NDVI:</strong>
+                        O sistema calcula o Índice de Vegetação por Diferença Normalizada (NDVI).
+                        Quedas bruscas do índice indicam remoção de vegetação ou abertura de clareiras.
+                    </li>
+                    <li>
+                        <strong>Detecção de Anomalias:</strong>
+                        O sistema marca regiões com mudanças não autorizadas, como solo exposto ou novas estruturas.
+                    </li>
+                    <li>
+                        <strong>Geofencing:</strong>
+                        As mudanças detectadas são cruzadas com polígonos de áreas protegidas para filtrar alertas relevantes.
+                    </li>
+                    <li>
+                        <strong>Geração de Alerta:</strong>
+                        Um relatório com imagens e coordenadas é enviado ao órgão fiscalizador responsável.
+                    </li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Global Solution FIAP. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
-
-

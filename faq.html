@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perguntas frequentes sobre a Global Solution FIAP.">
     <title>Global Solution FIAP - FAQ</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,15 +13,15 @@
             <a href="index.html" class="logo">
                 <img src="assets/logo.png" alt="Logo da Solução">
             </a>
-            <nav>
-                <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+            <nav aria-label="Menu principal">
+                <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
                 <ul class="nav-list">
                     <li><a href="index.html">Início</a></li>
                     <li><a href="sobre.html">Sobre o Projeto</a></li>
                     <li><a href="solucao1.html">Nossa Solução 1</a></li>
                     <li><a href="solucao2.html">Nossa Solução 2</a></li>
                     <li><a href="integrantes.html">Integrantes</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="faq.html" class="active">FAQ</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
@@ -32,47 +33,41 @@
             <div class="container">
                 <h2>Perguntas Frequentes (FAQ)</h2>
                 <p>Encontre respostas para as dúvidas mais comuns sobre nossa Global Solution.</p>
+
                 <div class="faq-item">
                     <h3>O que é a Global Solution da FIAP?</h3>
                     <p>A Global Solution é um desafio anual da FIAP que propõe aos alunos o desenvolvimento de soluções inovadoras para problemas reais, utilizando tecnologias e conhecimentos adquiridos durante o curso. O tema deste ano é a Economia Espacial e sua conexão com desafios terrestres.</p>
                 </div>
+
                 <div class="faq-item">
                     <h3>Qual o problema que sua solução busca resolver?</h3>
-                    <p>Nossa solução visa [descreva brevemente o problema, por exemplo: otimizar a gestão de recursos hídricos na agricultura, utilizando dados de satélite para prever necessidades de irrigação e reduzir o desperdício de água].</p>
+                    <p>Nossa solução visa combater ilegalidades ambientais no Brasil — como ocupações irregulares em APPs, desmatamento ilegal na Amazônia e Cerrado, e mineração ilegal — utilizando monitoramento por satélite e inteligência artificial para detectar mudanças em até 24 a 48 horas.</p>
                 </div>
+
                 <div class="faq-item">
                     <h3>Como a tecnologia espacial é utilizada em sua solução?</h3>
-                    <p>Utilizamos [mencione como, por exemplo: imagens de satélite de alta resolução para monitorar a saúde das culturas, dados de GPS para mapeamento preciso de áreas agrícolas e algoritmos de IA para analisar padrões climáticos e de solo, tudo isso para fornecer recomendações personalizadas aos agricultores].</p>
+                    <p>Utilizamos imagens dos satélites Sentinel-2 (ópticas de alta resolução) e Sentinel-1 (radar que "enxerga" através das nuvens). Algoritmos de IA comparam imagens temporais, calculam o NDVI e detectam anomalias automaticamente, gerando alertas precisos e georreferenciados.</p>
                 </div>
+
                 <div class="faq-item">
                     <h3>Quais são os principais benefícios da sua solução?</h3>
-                    <p>Os principais benefícios incluem [liste os benefícios, por exemplo: aumento da produtividade agrícola, redução do consumo de água, diminuição de custos operacionais para os agricultores e contribuição para a segurança alimentar global].</p>
+                    <p>Os principais benefícios incluem: redução de 80% a 90% nas invasões de APPs urbanas, melhoria de 50% a 70% no impedimento de desmatamento ilegal e redução de 60% a 80% nos casos de mineração ilegal identificados tardiamente — além de contribuir diretamente com os ODS da ONU.</p>
                 </div>
+
                 <div class="faq-item">
                     <h3>Como posso entrar em contato com a equipe?</h3>
-                    <p>Você pode entrar em contato conosco através do formulário na página de <a href="contato.html">Contato</a> ou enviando um e-mail diretamente para [seu e-mail de contato, se desejar].</p>
+                    <p>Você pode entrar em contato conosco através do formulário na página de <a href="contato.html">Contato</a>.</p>
                 </div>
-                 <div class="faq-item">
-                    <h3>Como o sistema detecta uma invasão ou desmatamento?</h3>
-                    <p>O sistema compara imagens de satélite da mesma região em datas diferentes. Quando uma mudança significativa é identificada — como o surgimento de novas construções ou abertura de clareiras — um alerta é gerado automaticamente com as coordenadas do local.</p>
-                 </div>
-                 <div class="faq-item">
-                    <h3>Como o Sentinel-1 monitora áreas com muitas nuvens?</h3>
-                    <p>O Sentinel-1 utiliza radar, que consegue "enxergar" através das nuvens. Isso permite o monitoramento contínuo mesmo em condições climáticas adversas, complementando as imagens ópticas do Sentinel-2.</p>
-                 </div>
-                 <div class="faq-item">
-                    <h3>De onde vêm os polígonos oficiais das áreas protegidas?</h3>
-                    <p>Os polígonos são obtidos de bases de dados oficiais do governo brasileiro, que definem os perímetros de APPs, terras públicas e reservas ambientais com coordenadas de latitude e longitude.</p>
-                 </div>
-                <!-- Adicione mais perguntas e respostas conforme necessário -->
             </div>
         </section>
     </main>
+
     <footer>
         <div class="container">
             <p>&copy; 2026 Global Solution FIAP. Todos os direitos reservados.</p>
         </div>
     </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>

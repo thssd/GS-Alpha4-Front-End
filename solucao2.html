@@ -3,141 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detalhamento técnico dos módulos da solução de monitoramento da Global Solution FIAP.">
     <title>Global Solution FIAP - Módulos da Solução</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-    <div class="container">
-        <a href="index.html" class="logo">
-            <img src="assets/logo.png" alt="Logo da Solução">
-        </a>
-        <nav>
-            <button class="menu-toggle" aria-label="Abrir menu">☰</button>
-            <ul class="nav-list">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre o Projeto</a></li>
-                <li><a href="solucao1.html">Nossa Solução 1</a></li>
-                <li><a href="solucao2.html" class="active">Nossa Solução 2</a></li>
-                <li><a href="integrantes.html">Integrantes</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<main>
-    <section id="solution2" class="content-section light-bg">
+    <header>
         <div class="container">
-            <h2>Módulos da Solução e Detalhamento Técnico</h2>
-            <p>
-                Para garantir eficiência na detecção e resposta a ilegalidades, nossa solução é organizada em 
-                módulos especializados, cada um focado em um tipo de área crítica: favelas/ocupações irregulares, 
-                desmatamento em biomas como Amazônia e Cerrado e mineração ilegal.
-            </p>
-
-            <h3>Módulo 1 – Ocupações Irregulares em Áreas Urbanas</h3>
-            <p>
-                Nas grandes cidades brasileiras, favelas e comunidades crescem rapidamente, muitas vezes 
-                ocupando encostas, margens de rios e outras Áreas de Preservação Permanente (APPs). 
-                Nosso módulo urbano atua da seguinte forma:
-            </p>
-            <ul>
-                <li>Comparação temporal de imagens de alta resolução de uma mesma região urbana.</li>
-                <li>Detecção de expansão de “manchas urbanas” (novas construções ou barracos) em poucas semanas.</li>
-                <li>Identificação de ocupações que avançam sobre encostas ou margens de rios.</li>
-                <li>Geração de alertas para prefeituras e órgãos municipais com coordenadas precisas.</li>
-            </ul>
-            <p>
-                Com essa abordagem, os agentes fiscalizadores podem atuar em 24 a 48 horas, 
-                reduzindo 80% a 90% das invasões desse tipo em áreas críticas.
-            </p>
-
-            <h3>Módulo 2 – Monitoramento de Desmatamento na Amazônia e Cerrado</h3>
-            <p>
-                Este módulo é focado nas regiões mais afetadas por desmatamento ilegal. Aqui, o foco é 
-                o uso combinado de NDVI e radar:
-            </p>
-            <ul>
-                <li>
-                    <strong>NDVI (Índice de Vegetação):</strong> 
-                    O sistema calcula o NDVI a partir de bandas de infravermelho próximo. 
-                    Vegetação saudável reflete muito essa luz; quedas bruscas indicam desmatamento ou clareiras.
-                </li>
-                <li>
-                    <strong>Detecção de Queda de NDVI:</strong> 
-                    Quando o índice cai significativamente de uma semana para outra, o sistema marca aquela área como suspeita.
-                </li>
-                <li>
-                    <strong>Complemento com Radar (Sentinel-1):</strong> 
-                    Mesmo em dias nublados, o radar detecta mudanças estruturais no solo e na vegetação.
-                </li>
-                <li>
-                    <strong>Foco em Áreas Protegidas:</strong> 
-                    Metade do desmatamento na Amazônia ocorre em terras públicas ou áreas protegidas – nosso sistema prioriza 
-                    essas regiões com maior sensibilidade.
-                </li>
-            </ul>
-            <p>
-                Com a melhoria do tempo de resposta, estimamos uma melhoria de 50% a 70% 
-                nos índices de impedimento de desmatamento ilegal.
-            </p>
-
-            <h3>Módulo 3 – Mineração Ilegal e Garimpo</h3>
-            <p>
-                A mineração ilegal depende de uma logística pesada (escavadeiras, motores, combustíveis, mercúrio) 
-                e causa danos profundos ao meio ambiente. Nosso módulo para mineração ilegal identifica:
-            </p>
-            <ul>
-                <li>Assinaturas de <strong>solo exposto</strong> em áreas onde deveria haver floresta densa.</li>
-                <li>Alterações em cursos d'água, como rios turvos, barragens improvisadas e áreas de lama.</li>
-                <li>Clareiras geométricas típicas de garimpos e estradas de acesso recém-abertas.</li>
-            </ul>
-            <p>
-                Com isso, é possível detectar rapidamente novos pontos de garimpo e acionar operações 
-                de fiscalização antes que o impacto se torne irreversível, com potencial de redução 
-                de 60% a 80% dos casos que hoje só são identificados tardiamente.
-            </p>
-
-            <h3>Módulo 4 – Geofencing e Sistema de Alerta</h3>
-            <p>
-                Para evitar falsos positivos e priorizar o que é realmente crítico, utilizamos geofencing:
-            </p>
-            <ul>
-                <li>O sistema armazena, em banco de dados, polígonos oficiais de áreas protegidas e governamentais.</li>
-                <li>As coordenadas (latitude e longitude) definem perímetros de APPs, terras públicas e reservas ambientais.</li>
-                <li>Somente mudanças dentro desses perímetros geram alertas prioritários.</li>
-            </ul>
-            <p>
-                Quando uma mudança suspeita é detectada:
-            </p>
-            <ol>
-                <li>O sistema gera um alerta com imagem anterior, imagem atual e mapa da região.</li>
-                <li>Profissionais da central revisam os dados e confirmam a irregularidade.</li>
-                <li>Um relatório é enviado diretamente para o órgão responsável com todas as evidências necessárias.</li>
-            </ol>
-
-            <p>
-                Esse módulo é o “cérebro operacional” da plataforma, garantindo que os agentes recebam 
-                alertas confiáveis, georreferenciados e dentro de prazos que realmente fazem a diferença 
-                na prevenção e contenção de danos ambientais e sociais.
-            </p>
-
-            <img src="assets/solucao2.png" alt="Módulos da Solução 2" style="max-width: 100%; height: auto; margin-top: 30px;">
-            <p style="font-size: 0.9em; color: #666; text-align: center;">
-                Visão dos diferentes módulos de monitoramento: urbano, florestal, mineração e sistema de alerta.
-            </p>
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Logo da Solução">
+            </a>
+            <nav aria-label="Menu principal">
+                <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre o Projeto</a></li>
+                    <li><a href="solucao1.html">Nossa Solução 1</a></li>
+                    <li><a href="solucao2.html" class="active">Nossa Solução 2</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
-</main>
+    </header>
 
-<footer>
-    <div class="container">
-        <p>&copy; 2026 Global Solution FIAP. Todos os direitos reservados.</p>
-    </div>
-</footer>
+    <main>
+        <section id="solution2" class="content-section light-bg">
+            <div class="container">
+                <h2>Módulos da Solução e Detalhamento Técnico</h2>
+                <p>
+                    Para garantir eficiência na detecção e resposta a ilegalidades, nossa solução é organizada em
+                    módulos especializados, cada um focado em um tipo de área crítica: favelas/ocupações irregulares,
+                    desmatamento em biomas como Amazônia e Cerrado e mineração ilegal.
+                </p>
 
-<script src="js/script.js"></script>
+                <h3>Módulo 1 – Ocupações Irregulares em Áreas Urbanas</h3>
+                <p>
+                    Nas grandes cidades brasileiras, favelas e comunidades crescem rapidamente, muitas vezes
+                    ocupando encostas, margens de rios e outras Áreas de Preservação Permanente (APPs).
+                    Nosso módulo urbano atua da seguinte forma:
+                </p>
+                <ul>
+                    <li>Comparação temporal de imagens de alta resolução de uma mesma região urbana.</li>
+                    <li>Detecção de expansão de "manchas urbanas" (novas construções ou barracos) em poucas semanas.</li>
+                    <li>Identificação de ocupações que avançam sobre encostas ou margens de rios.</li>
+                    <li>Geração de alertas para prefeituras e órgãos municipais com coordenadas precisas.</li>
+                </ul>
+                <p>
+                    Com essa abordagem, os agentes fiscalizadores podem atuar em 24 a 48 horas,
+                    reduzindo 80% a 90% das invasões desse tipo em áreas críticas.
+                </p>
+
+                <h3>Módulo 2 – Monitoramento de Desmatamento na Amazônia e Cerrado</h3>
+                <p>
+                    Este módulo é focado nas regiões mais afetadas por desmatamento ilegal. Aqui, o foco é
+                    o uso combinado de NDVI e radar:
+                </p>
+                <ul>
+                    <li>
+                        <strong>NDVI (Índice de Vegetação):</strong>
+                        O sistema calcula o NDVI a partir de bandas de infravermelho próximo.
+                        Vegetação saudável reflete muito essa luz; quedas bruscas indicam desmatamento ou clareiras.
+                    </li>
+                    <li>
+                        <strong>Detecção de Queda de NDVI:</strong>
+                        Quando o índice cai significativamente de uma semana para outra, o sistema marca aquela área como suspeita.
+                    </li>
+                    <li>
+                        <strong>Complemento com Radar (Sentinel-1):</strong>
+                        Mesmo em dias nublados, o radar detecta mudanças estruturais no solo e na vegetação.
+                    </li>
+                    <li>
+                        <strong>Foco em Áreas Protegidas:</strong>
+                        Metade do desmatamento na Amazônia ocorre em terras públicas ou áreas protegidas – nosso sistema prioriza
+                        essas regiões com maior sensibilidade.
+                    </li>
+                </ul>
+                <p>
+                    Com a melhoria do tempo de resposta, estimamos uma melhoria de 50% a 70%
+                    nos índices de impedimento de desmatamento ilegal.
+                </p>
+
+                <h3>Módulo 3 – Mineração Ilegal e Garimpo</h3>
+                <p>
+                    A mineração ilegal depende de uma logística pesada (escavadeiras, motores, combustíveis, mercúrio)
+                    e causa danos profundos ao meio ambiente. Nosso módulo para mineração ilegal identifica:
+                </p>
+                <ul>
+                    <li>Assinaturas de <strong>solo exposto</strong> em áreas onde deveria haver floresta densa.</li>
+                    <li>Alterações em cursos d'água, como rios turvos, barragens improvisadas e áreas de lama.</li>
+                    <li>Clareiras geométricas típicas de garimpos e estradas de acesso recém-abertas.</li>
+                </ul>
+                <p>
+                    Com isso, é possível detectar rapidamente novos pontos de garimpo e acionar operações
+                    de fiscalização antes que o impacto se torne irreversível, com potencial de redução
+                    de 60% a 80% dos casos que hoje só são identificados tardiamente.
+                </p>
+
+                <h3>Módulo 4 – Geofencing e Sistema de Alerta</h3>
+                <p>
+                    Para evitar falsos positivos e priorizar o que é realmente crítico, utilizamos geofencing:
+                </p>
+                <ul>
+                    <li>O sistema armazena, em banco de dados, polígonos oficiais de áreas protegidas e governamentais.</li>
+                    <li>As coordenadas (latitude e longitude) definem perímetros de APPs, terras públicas e reservas ambientais.</li>
+                    <li>Somente mudanças dentro desses perímetros geram alertas prioritários.</li>
+                </ul>
+                <p>Quando uma mudança suspeita é detectada:</p>
+                <ol>
+                    <li>O sistema gera um alerta com imagem anterior, imagem atual e mapa da região.</li>
+                    <li>Profissionais da central revisam os dados e confirmam a irregularidade.</li>
+                    <li>Um relatório é enviado diretamente para o órgão responsável com todas as evidências necessárias.</li>
+                </ol>
+
+                <p>
+                    Esse módulo é o "cérebro operacional" da plataforma, garantindo que os agentes recebam
+                    alertas confiáveis, georreferenciados e dentro de prazos que realmente fazem a diferença
+                    na prevenção e contenção de danos ambientais e sociais.
+                </p>
+
+                <figure>
+                    <img src="assets/solucao2.png" alt="Diagrama com os quatro módulos de monitoramento: urbano, florestal, mineração e sistema de alerta" class="solution-image">
+                    <figcaption class="figure-caption">
+                        Visão dos diferentes módulos de monitoramento: urbano, florestal, mineração e sistema de alerta.
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Global Solution FIAP. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
